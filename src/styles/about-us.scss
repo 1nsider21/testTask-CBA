@@ -1,0 +1,90 @@
+.about-us {
+  display: flex;
+  overflow: hidden;
+
+  &__preview {
+    width: 40%;
+    position: relative;
+    z-index: 5;
+
+    @media (max-width: 1420px) {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__experience {
+    width: 240px;
+    height: 220px;
+    padding: 1.2rem 9.1rem 0 3.4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffb800;
+    color: $white;
+    letter-spacing: 0.2px;
+
+    p {
+      font-family: $playfairDisplayFont;
+      font-size: 7rem;
+      line-height: 9.8rem;
+    }
+
+    span {
+      font-size: 3rem;
+      line-height: 4.1rem;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 15rem 19rem;
+
+    @media (max-width: 1200px) {
+      padding: 10rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 5rem;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: -20rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 0.8rem;
+
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: $yellow;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 2.7rem;
+
+    font-family: $playfairDisplayFont;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5.5rem;
+    letter-spacing: 0.2px;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.2px;
+    color: $grey;
+  }
+}

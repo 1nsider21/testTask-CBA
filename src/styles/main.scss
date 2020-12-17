@@ -1,7 +1,33 @@
-@import "utils";
 @import "fonts";
-@import "typography";
+@import "variables";
+@import "header";
+@import "burger-menu";
+@import "about-us";
+@import "stages";
+@import "projects";
+@import "reviews";
+@import "contact-us";
+@import "footer";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
 body {
-  background: $c-gray;
+  font-family: $gilroyFont;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }

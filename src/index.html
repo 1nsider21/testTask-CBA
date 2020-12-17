@@ -3,11 +3,328 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>CBA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header id="header" class="header">
+      <div class="header__top">
+        <div class="header__contacts">
+          <div class="phones">
+            <a href="tel:+38 (067) 467-37-67" class="phones__item">+38 (067) 467-37-67</a>
+            <a href="tel:+38 (067) 467-37-67" class="phones__item">+38 (067) 467-37-67</a>
+          </div>
+          <ul class="media-networks">
+            <li class="media-networks__item">
+              <a href="#" class="media-networks__link">
+                <img
+                  src="styles/images/linkedin.svg"
+                  class="media-networks__img"
+                  alt="linkedin"
+                >
+              </a>
+            </li>
+            <li class="media-networks__item">
+              <a href="#" class="socailnetworks__link">
+                <img
+                  src="styles/images/facebook.svg"
+                  class="media-networks__img"
+                  alt="facebook"
+                >
+              </a>
+            </li>
+            <li class="media-networks__item">
+              <a href="#" class="socail-networks__link">
+                <img
+                  src="styles/images/instagram.svg"
+                  class="media-networks__img"
+                  alt="instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav">
+          <a href="#" class="logo">
+            <img src="styles/images/logo.png"
+              alt="Logo"
+              class="logo__img"
+            >
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about-us" class="nav__link">Про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Відгуки</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Ціни</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Наші роботи</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact-us" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+          <a href="#" class="nav__callback">Замовити дзвінок</a>
+        </nav>
+        <div class="burger-menu">
+          <input type="checkbox" id="burger-menu">
+          <label for="burger-menu">
+            <div class="burger-menu__lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+          <div class="burger-menu__cover">
+            <nav class="burger-menu__nav">
+              <a href="#" class="burger-menu__logo">
+                <img src="styles/images/logo.png"
+                  alt="Logo"
+                  class="logo__img"
+                >
+              </a>
+              <ul class="burger-menu__list">
+                <li class="burger-menu__item">
+                  <a href="#about-us" class="burger-menu__link">Про нас</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#reviews" class="burger-menu__link">Відгуки</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Ціни</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#projects" class="burger-menu__link">Наші роботи</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#contact-us" class="burger-menu__link">Контакти</a>
+                </li>
+              </ul>
+              <a href="#" class="burger-menu__callback">Замовити дзвінок</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__promo">
+        <h2 class="header__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+        <p class="header__sub-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam.
+        </p>
+        <a href="#" class="header__button">Залишити заявку</a>
+      </div>
+      <ul class="header-info">
+        <li class="header-info__item">
+          Фіксований кошторис
+          <img src="styles/images/business.png" alt="business">
+        </li>
+        <li class="header-info__item">
+          Працюємо без авансів
+          <img src="styles/images/money-bag.png" alt="money-bag">
+        </li>
+        <li class="header-info__item">
+          Щотижнева звітність робочого процесу
+          <img src="styles/images/business-report.png" alt="business-report">
+        </li>
+        <li class="header-info__item">
+          Здача роботи у зазначені терміни
+          <img src="styles/images/fast.png" alt="fast">
+        </li>
+        <li class="header-info__item">
+          Гарантія на роботи
+          <img src="styles/images/guarantee.png" alt="guarantee">
+        </li>
+      </ul>
+    </header> <!--Header-->
+
+    <div id="about-us" class="about-us">
+      <div class="about-us__preview">
+        <img src="styles/images/about-us-preview.png" alt="about-us preview">
+        <div class="about-us__experience">
+          <p>10+</p>
+          <span>Років досвіду</span>
+        </div>
+      </div>
+      <div class="about-us__content">
+        <p class="about-us__heading">Про нас</p>
+        <h2 class="about-us__title">Хто ми такі?</h2>
+        <p class="about-us__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin consequat mauris augue, id suscipit risus mattis non. Sed a vulputate diam.
+        </p>
+        <p class="about-us__text">
+          Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed sem egestas hendrerit at vel quam. Vestibulum maximus velit dui.
+        </p>
+        <img src="styles/images/two-bedroom-plan1.png" alt="two-bedroom-plan">
+      </div>
+    </div> <!--About-us-->
+
+    <div id="stages" class="stages">
+      <p class="stages__heading">Етапи роботи</p>
+      <h3 class="stages__title">Як ми працюємо?</h3>
+      <div class="stages__container">
+        <div class="stages__item">
+          1
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Виїзд майстра на обєкт для замірів</span>
+        </div>
+        <div class="stages__item">
+          2
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Складання кошторису згідно попередніх домовлень</span>
+        </div>
+        <div class="stages__item">
+          3
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Підписання договору</span>
+        </div>
+        <div class="stages__item">
+          4
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Закупівля матеріалу</span>
+        </div>
+        <div class="stages__item">
+          5
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Вчасна здача проекту</span>
+        </div>
+        <div class="stages__item">
+          6
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Щасливі замовники</span>
+        </div>
+      </div>
+    </div> <!--Stages-->
+
+    <div id="projects" class="projects">
+      <p class="projects__heading">Портфоліо</p>
+      <h2 class="projects__title">Наші роботи</h2>
+      <div class="project">
+        <div class="project__description">
+          <h3 class="project__title">Назва проекта</h3>
+          <p class="project__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla.
+          </p>
+          <p class="project__details">Термін ремонта:<span>21 день</span></p>
+          <p class="project__details">Площа:<span>81 м2</span></p>
+          <img src="styles/images/two-bedroom-plan2.png" alt="two-bedroom-plan">
+          <div class="project__examples">
+            <div class="project__examples--first project__examples--item"></div>
+            <div class="project__examples--second project__examples--item"></div>
+            <div class="project__examples--third project__examples--item"></div>
+          </div>
+        </div>
+        <div class="project__preview">
+          <img src="styles/images/project-preview.png" alt="project preview">
+          <div class="project__preview-nav">
+            <div class="project__preview-dots">
+              <img src="styles/images/big-dot.svg" alt="nav dot">
+              <img src="styles/images/small-dot.svg" alt="nav dot">
+              <img src="styles/images/small-dot.svg" alt="nav dot">
+              <img src="styles/images/small-dot.svg" alt="nav dot">
+            </div>
+            <div class="project__preview-arrows">
+              <img src="styles/images/arrow-left.svg" alt="nav arrow">
+              <img src="styles/images/arrow-right.svg" alt="nav arrow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--Projects-->
+
+    <div id="reviews" class="reviews">
+      <div class="reviews__container">
+        <p class="reviews__heading">Відгуки</p>
+        <h3 class="reviews__title">Що про нас говорять наші клієнти</h3>
+        <p class="reviews__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu.
+        </p>
+        <p class="reviews__author">Елена Филонова, Львів</p>
+        <div class="reviews__nav">
+          <div class="reviews__nav-container">
+            <img src="styles/images/arrow-left.svg" alt="nav arrow">
+            <img src="styles/images/yellow-dot.svg" alt="nav dot">
+            <img src="styles/images/small-dot.svg" alt="nav dot">
+            <img src="styles/images/small-dot.svg" alt="nav dot">
+            <img src="styles/images/small-dot.svg" alt="nav dot">
+            <img src="styles/images/yellow-arrow.svg" alt="nav arrow">
+          </div>
+        </div>
+      </div>
+    </div> <!--Reviews-->
+
+    <div id="contact-us" class="contact-us">
+      <div class="contact-us__container">
+        <h3 class="contact-us__title">Зв'яжіться з нами</h3>
+        <p class="contact-us__subtitle">
+          Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин.
+        </p>
+        <form action="#" class="form">
+          <div class="form__inputs">
+            <input type="text" placeholder="Ім’я">
+            <input type="email" placeholder="E-mail">
+          </div>
+          <textarea class="form__textarea" placeholder="Ваше повідомлення.."></textarea>
+          <button class="form__button" type="submit">Надіслати</button>
+        </form>
+      </div>
+    </div> <!--Contact-us-->
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__column">
+          <a href="#header" class="footer__logo">
+            <img src="styles/images/logo.png" alt="">
+          </a>
+          <p class="footer__text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="footer__column">
+          <a href="#about-us" class="footer__about">Про нас</a>
+          <a href="#projects" class="footer__about">Портфоліо</a>
+          <a href="#stages" class="footer__about">Етапи роботи</a>
+        </div>
+        <div class="footer__column">
+          <p class="footer__address">
+            <strong>Україна</strong>, м.Львів,
+            Вул. Зелена 230
+          </p>
+          <a href="tel:(097)857-70-47" class="footer__phone">(097)857-70-47</a>
+        </div>
+        <div class="footer__column">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <img src="styles/images/footer-instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <img src="styles/images/footer-linkedin.svg" alt="linkedin">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <img src="styles/images/footer-facebook.svg" alt="facebook">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__floor">
+        <p class="footer__rights">
+          2020 © Come Back Agency. All Rights Reserved.
+        </p>
+      </div>
+    </footer> <!--Footer-->
   </body>
 </html>

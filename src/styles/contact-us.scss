@@ -1,0 +1,113 @@
+.contact-us {
+  display: flex;
+  background-color: #ffb800;
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem;
+    color: $white;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.7rem;
+
+    font-family: $playfairDisplayFont;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 4.3rem;
+
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: 0.5%;
+  }
+}
+
+.form {
+
+  input,
+  textarea {
+    display: block;
+    height: 3rem;
+    padding: 0.3rem 0;
+    border: none;
+    border-bottom: 0.5px solid $white;
+    background-color: transparent;
+    outline: none;
+    font-family: $gilroyFont;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 7%;
+    color: $white;
+
+    &::placeholder {
+      color: inherit;
+    }
+  }
+
+  &__inputs {
+    margin-bottom: 4.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 566px) {
+      display: block;
+    }
+
+    input {
+      display: block;
+      width: 330px;
+
+      @media (max-width: 566px) {
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: 4.2rem;
+        }
+      }
+
+      &:last-child {
+        margin-left: 10rem;
+  
+        @media (max-width: 566px) {
+          margin-left: 0;
+        }
+      }
+    }
+
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 5.2rem;
+    resize: none;
+  }
+
+  &__button {
+    padding: 1.1rem 2.5rem;
+    border: none;
+    background-color: $white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #ffb800;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.2s linear, background 0.2s linear;
+
+    &:hover {
+      color: $white;
+      background-color: $yellow;
+    }
+  }
+}
